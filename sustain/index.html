@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainable Wardrobe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sustainable Wardrobe Management</h1>
+    </header>
+    
+    <section id="add-item">
+        <h2>Add New Clothing Item</h2>
+        <form id="wardrobe-form">
+            <label for="item-name">Item Name:</label>
+            <input type="text" id="item-name" required>
+
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="everyday">Everyday</option>
+                <option value="special">Special</option>
+                <option value="seasonal">Seasonal</option>
+            </select>
+
+            <label for="season">Season:</label>
+            <select id="season">
+                <option value="all">All</option>
+                <option value="summer">Summer</option>
+                <option value="winter">Winter</option>
+                <option value="fall">Fall</option>
+                <option value="spring">Spring</option>
+            </select>
+
+            <button type="submit">Add Item</button>
+        </form>
+    </section>
+
+    <section id="wardrobe-collection">
+        <h2>Wardrobe Collection</h2>
+        <div id="collection"></div>
+    </section>
+
+    <section id="notifications">
+        <h2>Notifications</h2>
+        <div id="popup-notification"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
